@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="10"
+    android:background="#000000"
+    tools:context=".Main3Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_height="wrap_content">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:background="@drawable/nen"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/imgTruyen"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtpage"
+            android:gravity="center"
+            android:textColor="#860d00"
+            android:text="page1/10"
+            android:padding="2sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@drawable/shape_bend"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <ImageView
+                android:id="@+id/imgPrivious"
+                android:layout_marginBottom="4dp"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@drawable/shape_imgpri"
+                />
+
+            <SeekBar
+                android:id="@+id/seekbarlist"
+                android:layout_width="200sp"
+                android:max="100"
+                android:thumb="@drawable/knife3"
+                android:progressBackgroundTint="#ffffff"
+                android:layout_height="30sp" />
+
+            <ImageView
+                android:id="@+id/imgnext"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@drawable/shape_imgnext"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
